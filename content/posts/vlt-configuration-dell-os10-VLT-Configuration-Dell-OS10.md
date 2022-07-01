@@ -1,5 +1,4 @@
 ---
-type: "post"
 author: Gary Ossewaarde
 title: VLT Configuration (Dell OS10)
 categories: ['networking']

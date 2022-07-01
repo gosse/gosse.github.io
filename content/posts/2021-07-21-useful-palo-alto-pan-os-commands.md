@@ -1,9 +1,9 @@
 ---
-type: "post"
 author: Gary Ossewaarde
 title: Useful Palo Alto PAN-OS Commands
 categories: ['networking']
 tags: ['networking', 'palo alto', 'panos', 'security', 'strata']
+date: 2021-07-21T21:45:28-04:00
 ---
 
 <div class="boldgrid-section"><div class="container"><div class="row"><div class="col-md-12 col-xs-12 col-sm-12">Fix terminal height/width

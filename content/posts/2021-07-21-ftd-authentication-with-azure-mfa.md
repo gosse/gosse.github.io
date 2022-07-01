@@ -1,10 +1,9 @@
 ---
 tags: ['azure', 'cisco', 'ftd', 'networking', 'security']
-type: "post"
 author: Gary Ossewaarde
 title: FTD Authentication with Azure MFA
 categories: ['networking']
-
+date: 2021-07-21T21:45:28-04:00
 ---
 
 <div class="boldgrid-section"><div class="container"><div class="row"><div class="col-md-12 col-xs-12 col-sm-12">I recently configured Azure MFA to authenticate AnyConnect users connecting to a FTD firewall. This required some odd workarounds.

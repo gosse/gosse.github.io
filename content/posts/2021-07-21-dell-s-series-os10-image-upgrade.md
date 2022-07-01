@@ -1,9 +1,9 @@
 ---
-type: "post"
 author: Gary Ossewaarde
 title: Dell S-Series OS10 Image Upgrade
 categories: ['networking']
 tags: ['dell', 'networking', 'os10']
+date: 2021-07-21T21:45:28-04:00
 ---
 
 I keep having to look this up, so I’m just going to write it here quick.

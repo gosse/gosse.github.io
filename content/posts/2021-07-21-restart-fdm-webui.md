@@ -1,8 +1,8 @@
 ---
-type: "post"
 author: Gary Ossewaarde
 title: Restart FDM WebUI
 tags: ['cisco', 'fdm', 'ftd', 'networking', 'security']
+date: 2021-07-21T21:45:28-04:00
 ---
 
 Sometimes, the FDM Web UI stops responding. I’ve found this especially on 6.5 code. To restart tomcat, go into expert mode and disable/enable:
