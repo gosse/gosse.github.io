@@ -2,7 +2,7 @@
 author: Gary Ossewaarde
 title: Tailscale on Cisco ISR4k
 categories: ['networking']
-date: 2021-07-21T21:45:28-04:00
+date: 2021-12-11T21:45:28-04:00
 ---
 
 <div class="boldgrid-section"><div class="container"><div class="row"><div class="col-md-12 col-xs-12 col-sm-12">### Tailscale &amp; IOx
