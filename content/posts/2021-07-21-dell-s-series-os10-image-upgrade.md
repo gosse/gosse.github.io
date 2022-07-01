@@ -1,12 +1,9 @@
 ---
-url: "/2021/07/21/dell-s-series-os10-image-upgrade/"
 type: "post"
-author: nexthopself_qo5fng
+author: Gary Ossewaarde
 title: Dell S-Series OS10 Image Upgrade
-categories: "['networking']"
-guid: https://www.next-hop-self.com/?p=66
-id: 66
-tags: "['dell', 'networking', 'os10']"
+categories: ['networking']
+tags: ['dell', 'networking', 'os10']
 ---
 
 I keep having to look this up, so I’m just going to write it here quick.

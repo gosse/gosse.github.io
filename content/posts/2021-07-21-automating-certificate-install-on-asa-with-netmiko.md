@@ -1,12 +1,9 @@
 ---
-url: "/2021/07/21/automating-certificate-install-on-asa-with-netmiko/"
 type: "post"
-author: nexthopself_qo5fng
+author: Gary Ossewaarde
 title: Automating Certificate Install on ASA with Netmiko
-categories: "['networking']"
-guid: https://www.next-hop-self.com/?p=64
-id: 64
-tags: "['asa', 'automation', 'cisco', 'networking', 'security']"
+categories: ['networking']
+tags: ['asa', 'automation', 'cisco', 'networking', 'security']
 ---
 
 Here is a little script I wrote to automate putting certificates onto ASAs. It also activates the cert on the inside interface (mine is a one-armed VPN concentrator). The cert is assumed to already in the correct format and named asabase64.cert.

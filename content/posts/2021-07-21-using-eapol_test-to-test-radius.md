@@ -1,12 +1,9 @@
 ---
-url: "/2021/07/21/using-eapol_test-to-test-radius/"
 type: "post"
-author: nexthopself_qo5fng
+author: Gary Ossewaarde
 title: Using eapol_test to test RADIUS
-categories: "['networking']"
-guid: https://www.next-hop-self.com/?p=74
-id: 74
-tags: "['networking', 'radius']"
+categories: ['networking']
+tags: ['networking', 'radius']
 ---
 
 The little program eapol\_test can come in handy when trying to test RADIUS configurations. eapol\_test is a part of [wpa\_supplicant](http://w1.fi/wpa_supplicant/).

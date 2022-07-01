@@ -1,25 +1,10 @@
 ---
-boldgrid_hide_page_title:
-- '1'
-bgseo_robots_index:
-- index
-image: /wp-content/uploads/2021/07/ftd-anyconnect-azuremfa.png
-bgseo_robots_follow:
-- follow
-siteorigin_page_settings:
-- a:7:{s:6:"layout";s:7:"default";s:15:"display_top_bar";b:1;s:14:"display_header";b:1;s:13:"header_margin";b:1;s:10:"page_title";b:1;s:13:"footer_margin";b:1;s:22:"display_footer_widgets";b:1;}
-boldgrid_in_page_containers:
-- '1'
-guid: https://www.next-hop-self.com/?p=70
-id: 70
-tags: "['azure', 'cisco', 'ftd', 'networking', 'security']"
-url: "/2021/07/21/ftd-authentication-with-azure-mfa/"
+tags: ['azure', 'cisco', 'ftd', 'networking', 'security']
 type: "post"
-bgseo_custom_keyword:
-- azure mfa with ftd
-author: nexthopself_qo5fng
+author: Gary Ossewaarde
 title: FTD Authentication with Azure MFA
-categories: "['networking']"
+categories: ['networking']
+
 ---
 
 <div class="boldgrid-section"><div class="container"><div class="row"><div class="col-md-12 col-xs-12 col-sm-12">I recently configured Azure MFA to authenticate AnyConnect users connecting to a FTD firewall. This required some odd workarounds.

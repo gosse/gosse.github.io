@@ -1,12 +1,9 @@
 ---
-url: "/2021/07/21/fdm-ftd-ha-upgrade/"
 type: "post"
-author: nexthopself_qo5fng
+author: Gary Ossewaarde
 title: FDM FTD HA Upgrade
-categories: "['networking']"
-guid: https://www.next-hop-self.com/?p=62
-id: 62
-tags: "['cisco', 'fdm', 'ftd', 'networking', 'security']"
+categories: ['networking']
+tags: ['cisco', 'fdm', 'ftd', 'networking', 'security']
 ---
 
 To upgrade an HA pair of Firepower firewalls managed by FDM, use the following procedure:
