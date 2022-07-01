@@ -4,7 +4,6 @@ DefaultContentLanguage = "en-us"
 title = 'next-hop-self'
 theme =  'harbor'
 paginate = 6
-enableInlineShortcodes = true
 footnoteReturnLinkContents = "^"
 
 [Author]
@@ -46,17 +45,17 @@ footnoteReturnLinkContents = "^"
 [[params.social]]
   name="LinkedIn"
   url="https://www.linkedin.com/in/gossew/"
-  icon="fa-brands fa-linkedin"
+  icon="fab fa-linkedin"
 
 [[params.social]]
   name="GitHub"
   url="https://github.com/gosse"
-  icon="fa-brands fa-github"
+  icon="fab fa-github"
 
 [[params.social]]
   name="Twitter"
   url="https://twitter.com/gossewaa"
-  icon="fa-brands fa-twitter"
+  icon="fab fa-twitter"
 
 [params.logo]
   url = "icon.png" # static/images/icon.png
