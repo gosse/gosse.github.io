@@ -6,11 +6,11 @@ categories: ['networking']
 date: 2021-07-21T21:45:28-04:00
 ---
 
-<div class="boldgrid-section"><div class="container"><div class="row"><div class="col-md-12 col-xs-12 col-sm-12">I recently configured Azure MFA to authenticate AnyConnect users connecting to a FTD firewall. This required some odd workarounds.
+I recently configured Azure MFA to authenticate AnyConnect users connecting to a FTD firewall. This required some odd workarounds.
 
 **Problems to work around**
 
-1. FTD cannot do SAML, must use RADIUS for AnyConnect AAA
+1. FTD cannot do SAML, must use RADIUS for AnyConnect AAA (note: later versoins of FTD are SAML capable)
 2. Microsoft NPS with Azure MFA extension must be used for RADIUS Integration to Azure MFA
 3. Microsoft NPS has a limited number of attributes it can filter incoming RADIUS requests on
 4. Customer has a need to only allow certain AD groups access to certain tunnel groups
@@ -74,5 +74,3 @@ date: 2021-07-21T21:45:28-04:00
 **Troubleshooting**
 
 The NPS logs are a pain to use for troubleshooting. I wrote a quick python script to help parse the logs. You can find it here: <https://github.com/gosse/interpret-nps-logs>.
-
-</div></div></div></div>
