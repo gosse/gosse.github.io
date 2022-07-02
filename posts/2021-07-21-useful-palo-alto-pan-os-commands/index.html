@@ -1,10 +1,27 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><title>Useful Palo Alto PAN-OS Commands</title><meta name=description content><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=alternate type=application/rss+xml href=https://gosse.github.io/index.xml title=next-hop-self><meta name=twitter:card content="summary"><meta name=twitter:title content="Useful Palo Alto PAN-OS Commands"><meta name=twitter:description content="<div class=&#34;boldgrid-section&#34;><div class=&#34;container&#34;><div class=&#34;row&#34;><div class=&#34;col-md-12 col-xs-12 col-sm-12&#34;>Newer models – disable ZTP </div></div></div></div>``` <pre class=&#34;&#34;>request disable-ztp delete network virtual-wire default-vwire delete rulebase security rules rule1 delete zone trust delete zone untrust delete network interface ethernet ethernet1/1 delete network interface ethernet ethernet1/2 delete network interface ethernet ethernet1/3 delete network interface ethernet ethernet1/4 delete network interface ethernet ethernet1/5 delete network interface ethernet ethernet1/6 delete network interface ethernet ethernet1/7 delete network interface ethernet ethernet1/8"><link rel=stylesheet href=https://gosse.github.io/fontawesome/css/all.min.css><link crossorigin=anonymous href=/css/styles.min.css integrity rel="preload stylesheet" as=style><link id=dark-mode-theme crossorigin=anonymous href=/css/dark.min.css integrity rel="preload stylesheet" as=style><script>var darkTheme=document.getElementById("dark-mode-theme"),storedTheme=localStorage.getItem("dark-mode-storage");storedTheme==="dark"?darkTheme.disabled=!1:storedTheme==="light"&&(darkTheme.disabled=!0)</script><script defer crossorigin=anonymous src=/js/theme.js integrity></script>
-<script defer crossorigin=anonymous src=/js/instantpage.min.js integrity></script><meta name=generator content="Hugo 0.101.0"></head><body><header><nav class=navbar><div class=nav><a href=https://gosse.github.io/ class=nav-logo><img src=https://gosse.github.io/images/icon.png width=50 height=50 alt=Logo></a><ul class=nav-links><li><a href=/about/ id=About><em class="fas fa-user fa-lg"></em></a></li><li><a href=/tags id=Tags><em class="fas fa-tag fa-lg"></em></a></li><li><a href=/categories id=Category><em class="fas fa-folder-open fa-lg"></em></a></li><li><a href=/archives id=Archives><em class="fas fa-archive fa-lg"></em></a></li></ul></div></nav><div class=intro-header><div class=container><div class=posts-heading><h1>Useful Palo Alto PAN-OS Commands</h1></div></div></div></header><div class=container role=main><article class=article class=blog-post><pre tabindex=0><code>
-&lt;div class=&#34;boldgrid-section&#34;&gt;&lt;div class=&#34;container&#34;&gt;&lt;div class=&#34;row&#34;&gt;&lt;div class=&#34;col-md-12 col-xs-12 col-sm-12&#34;&gt;Newer models – disable ZTP
-
-&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;```
-&lt;pre class=&#34;&#34;&gt;request disable-ztp
-</code></pre><p>delete network virtual-wire default-vwire
+<!doctype html><html lang=en-us><head><meta charset=utf-8><title>Useful Palo Alto PAN-OS Commands</title><meta name=description content><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=alternate type=application/rss+xml href=https://gosse.github.io/index.xml title=next-hop-self><meta name=twitter:card content="summary"><meta name=twitter:title content="Useful Palo Alto PAN-OS Commands"><meta name=twitter:description content="Fix terminal height/width
+set cli terminal height 500 set cli terminal width 500 Update Content/Threats from CLI (update license first)
+request license fetch request content upgrade check request content upgrade download latest request content upgrade install version latest Update Anti-Virus (AV) from CLI
+request anti-virus upgrade check request anti-virus upgrade download latest request anti-virus upgrade install version latest Update PAN-OS Version from CLI
+request system software info request system software download version 9."><link rel=stylesheet href=https://gosse.github.io/fontawesome/css/all.min.css><link crossorigin=anonymous href=/css/styles.min.css integrity rel="preload stylesheet" as=style><link id=dark-mode-theme crossorigin=anonymous href=/css/dark.min.css integrity rel="preload stylesheet" as=style><script>var darkTheme=document.getElementById("dark-mode-theme"),storedTheme=localStorage.getItem("dark-mode-storage");storedTheme==="dark"?darkTheme.disabled=!1:storedTheme==="light"&&(darkTheme.disabled=!0)</script><script defer crossorigin=anonymous src=/js/theme.js integrity></script>
+<script defer crossorigin=anonymous src=/js/instantpage.min.js integrity></script><meta name=generator content="Hugo 0.101.0"></head><body><header><nav class=navbar><div class=nav><a href=https://gosse.github.io/ class=nav-logo><img src=https://gosse.github.io/images/icon.png width=50 height=50 alt=Logo></a><ul class=nav-links><li><a href=/about/ id=About><em class="fas fa-user fa-lg"></em></a></li><li><a href=/tags id=Tags><em class="fas fa-tag fa-lg"></em></a></li><li><a href=/categories id=Category><em class="fas fa-folder-open fa-lg"></em></a></li><li><a href=/archives id=Archives><em class="fas fa-archive fa-lg"></em></a></li></ul></div></nav><div class=intro-header><div class=container><div class=posts-heading><h1>Useful Palo Alto PAN-OS Commands</h1></div></div></div></header><div class=container role=main><article class=article class=blog-post><p>Fix terminal height/width</p><pre tabindex=0><code>set cli terminal height 500
+set cli terminal width 500
+</code></pre><p>Update Content/Threats from CLI (update license first)</p><pre tabindex=0><code>request license fetch 
+request content upgrade check
+request content upgrade download latest
+request content upgrade install version latest
+</code></pre><p>Update Anti-Virus (AV) from CLI</p><pre tabindex=0><code>request anti-virus upgrade check 
+request anti-virus upgrade download latest 
+request anti-virus upgrade install version latest
+</code></pre><p>Update PAN-OS Version from CLI</p><pre tabindex=0><code>request system software info
+request system software download version 9.0.3-h3
+request system software install version 9.0.3-h3
+request restart system
+</code></pre><p>Set management port to DHCP</p><pre tabindex=0><code>configure
+set deviceconfig system type dhcp-client accept-dhcp-domain yes accept-dhcp-hostname yes send-client-id yes send-hostname yes
+commit
+</code></pre><p>Newer models – disable ZTP</p><pre tabindex=0><code>request disable-ztp
+</code></pre><p>Configure Panorama server and delete default config ```
+set deviceconfig system panorama-server <code>IP/Hostname</code></p><p>delete network virtual-wire default-vwire
 delete rulebase security rules rule1
 delete zone trust
 delete zone untrust
