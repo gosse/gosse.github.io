@@ -33,13 +33,6 @@ footnoteReturnLinkContents = "^"
   url = "categories"
   weight = 3
 
-[[params.nav]]
-  identifier = "archives"
-  name = "Archives"
-  icon = "fas fa-archive fa-lg"
-  url = "archives"
-  weight = 3
-
 # copy paste this block and change for each social media to add how many ever social media
 # acounts/links you want
 [[params.social]]
