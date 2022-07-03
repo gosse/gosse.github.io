@@ -1,0 +1,84 @@
+<mxfile host="app.diagrams.net" modified="2022-07-03T23:42:01.470Z" agent="5.0 (X11)" etag="9cUQH7C36zjfSTGZLrJ6" version="20.0.4" type="github">
+  <diagram id="_Iri2bMeiNm1vtGAWKxc" name="Page-1">
+    <mxGraphModel dx="1614" dy="772" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-27" value="RADIUS Request" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" edge="1" parent="1" source="gyM9zL0i4kSRskqLVDlK-1" target="gyM9zL0i4kSRskqLVDlK-5">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="420" y="150" />
+              <mxPoint x="420" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-32" value="RADIUS Response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.975;entryY=0.619;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=8;" edge="1" parent="1" source="gyM9zL0i4kSRskqLVDlK-1" target="gyM9zL0i4kSRskqLVDlK-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-1" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.radius_server;fillOpacity=100;" vertex="1" parent="1">
+          <mxGeometry x="299" y="120" width="75.5" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" edge="1" parent="1" source="gyM9zL0i4kSRskqLVDlK-4" target="gyM9zL0i4kSRskqLVDlK-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-4" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.directory_server;" vertex="1" parent="1">
+          <mxGeometry x="640" y="121.25" width="65" height="88.5" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-25" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;Secondary Auth&lt;br&gt;&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=18;startArrow=classic;startFill=1;" edge="1" parent="1" source="gyM9zL0i4kSRskqLVDlK-5" target="gyM9zL0i4kSRskqLVDlK-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-29" value="&lt;div&gt;Primary&lt;/div&gt;&lt;div&gt;Authentication&lt;br&gt;&lt;/div&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" edge="1" parent="1" source="gyM9zL0i4kSRskqLVDlK-5" target="gyM9zL0i4kSRskqLVDlK-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-31" value="RADIUS Response" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;" edge="1" parent="1" source="gyM9zL0i4kSRskqLVDlK-5" target="gyM9zL0i4kSRskqLVDlK-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-5" value="" style="verticalLabelPosition=bottom;sketch=0;aspect=fixed;html=1;verticalAlign=top;strokeColor=none;align=center;outlineConnect=0;shape=mxgraph.citrix.radius_server;" vertex="1" parent="1">
+          <mxGeometry x="467" y="120" width="75.5" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-9" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/identity/Azure_AD_Domain_Services.svg;" vertex="1" parent="1">
+          <mxGeometry x="461" y="320" width="87.5" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-11" value="Azure AD" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="448.5" y="410" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-22" value="&lt;font style=&quot;font-size: 8px;&quot;&gt;RADIUS Request&lt;/font&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fontSize=18;" edge="1" parent="1" source="gyM9zL0i4kSRskqLVDlK-15" target="gyM9zL0i4kSRskqLVDlK-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="220" y="150" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-15" value="" style="verticalLabelPosition=bottom;sketch=0;html=1;fillColor=#A153A0;strokeColor=#ffffff;verticalAlign=top;align=center;points=[[0,0.5,0],[0.125,0.25,0],[0.25,0,0],[0.5,0,0],[0.75,0,0],[0.875,0.25,0],[1,0.5,0],[0.875,0.75,0],[0.75,1,0],[0.5,1,0],[0.125,0.75,0]];pointerEvents=1;shape=mxgraph.cisco_safe.compositeIcon;bgIcon=mxgraph.cisco_safe.design.blank_device;resIcon=mxgraph.cisco_safe.design.firepower_appliance;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="140" y="125.5" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-16" value="FTD Firewall" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="120" y="85.5" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-17" value="Cisco ISE" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="286.75" y="80" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-18" value="" style="verticalLabelPosition=bottom;sketch=0;html=1;fillColor=#282828;strokeColor=none;verticalAlign=top;pointerEvents=1;align=center;shape=mxgraph.cisco_safe.security_icons.ise;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="334" y="137" width="24.5" height="34.5" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-19" value="NPS Server" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="444.75" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-20" value="Active Directory" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];fillColor=none;strokeColor=none;rounded=0;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="605" y="80" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-33" value="Authentication" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;fontSize=8;horizontal=1;endArrow=classic;endFill=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="gyM9zL0i4kSRskqLVDlK-21" target="gyM9zL0i4kSRskqLVDlK-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-34" value="Complete MFA" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=8;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" edge="1" parent="1" source="gyM9zL0i4kSRskqLVDlK-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="359.9949999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="gyM9zL0i4kSRskqLVDlK-21" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.user;fontSize=18;" vertex="1" parent="1">
+          <mxGeometry x="147.75" y="326.05" width="64.5" height="67.89" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
