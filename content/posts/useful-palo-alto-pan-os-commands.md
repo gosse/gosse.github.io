@@ -6,6 +6,10 @@ tags: ['networking', 'palo alto', 'panos', 'security', 'strata']
 date: 2021-07-21T21:45:28-04:00
 ---
 
+Here are some commands I continually find myself searcing for, all in one place. 
+
+<!--more-->
+
 Fix terminal height/width
 
 ```

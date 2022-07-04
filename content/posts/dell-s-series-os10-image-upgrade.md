@@ -12,7 +12,11 @@ I keep having to look this up, so I’m just going to write it here quick.
 2\. Copy to usb stick or tftp server  
 3\. Do the upgrade.
 
-```
+<!--more-->
+
+Here's how it works:
+
+```no-highlight
 OS10# copy run start
 (if tftp) OS10# image download tftp://filename.bin
 OS10# image install usb://filename.bin

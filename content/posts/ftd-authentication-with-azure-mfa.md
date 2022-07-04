@@ -8,6 +8,8 @@ date: 2021-07-21T21:45:28-04:00
 
 I recently configured Azure MFA to authenticate AnyConnect users connecting to a FTD firewall. This required some odd workarounds.
 
+<!--more-->
+
 **Problems to work around**
 
 1. FTD cannot do SAML, must use RADIUS for AnyConnect AAA (note: later versoins of FTD are SAML capable)
@@ -28,7 +30,7 @@ I recently configured Azure MFA to authenticate AnyConnect users connecting to a
 **Authentication Diagram**
 
 
-![Authentication Diagram](ftd-azuremfa.svg)
+![Authentication Diagram](../ftd-azuremfa.svg)
 
 
 **Identity Services Engine (ISE) Configuration**

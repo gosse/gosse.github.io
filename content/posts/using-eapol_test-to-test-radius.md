@@ -8,6 +8,8 @@ date: 2021-07-21T21:45:28-04:00
 
 The little program eapol\_test can come in handy when trying to test RADIUS configurations. eapol\_test is a part of [wpa\_supplicant](http://w1.fi/wpa_supplicant/).
 
+<!--more-->
+
 Good information on the program can be found in the manpage, however the usage of the -N flag for attribute/value pairs deserves a few more words (and an example to remind myself in the future how to use it. Here is an example that includes sending Called-Station-Id of be-ef-be-ef-be-ef:ent-secure to 10.10.10.10 with a shared key of ‘aruba123’.
 
 ```

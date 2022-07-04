@@ -9,6 +9,8 @@ date: 2021-07-21T21:45:28-04:00
 
 VLT is a multi-chassis LAG technology, like VPC, VSX, MC-LAG, MLAG, etc. It is not virtual stacking, each switch maintains an independent control plane.
 
+<!--more-->
+
 Get your spanning-tree house in order. This is just an example.
 
 ```

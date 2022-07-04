@@ -8,7 +8,9 @@ date: 2021-07-21T21:45:28-04:00
 
 Here is a little script I wrote to automate putting certificates onto ASAs. It also activates the cert on the inside interface (mine is a one-armed VPN concentrator). The cert is assumed to already in the correct format and named asabase64.cert.
 
-```
+<!--more-->
+
+```no-highlight
 #!/usr/bin/env python3
 
 from netmiko import Netmiko

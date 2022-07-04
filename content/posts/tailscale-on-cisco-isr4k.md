@@ -9,6 +9,8 @@ date: 2021-12-11T21:45:28-04:00
 
 I absolutely love using [tailscale](https://tailscale.com/). It uses a great new protocol, [wireguard](https://www.wireguard.com/), but makes it easy to configure and use. I’ve used it as a VPN service for over a year now, but have always wanted to connected to devices that are not tailscale capable.
 
+<!--more-->
+
 My home router is a Cisco ISR4321. These are routers capable of running IOx, which allows you to run containers or even full-blown virtual machines on the router itself. The easiest way to get started with this is using [guestshell](https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/prog/configuration/166/b_166_programmability_cg/guest_shell.html), which comes packaged with IOS-XE. I did not try to run tailscale in guestshell, I wanted to run a separate virtual machine.
 
 ### Build Tailscale Router VM
@@ -27,7 +29,7 @@ At this point, you need the disk image to be qcow2. I was using VMware to build 
 
 You need the ioxclient tool for this part. This can be downloaded from [DevNet here](https://developer.cisco.com/docs/iox/#!iox-resource-downloads/downloads). I opted to use the SDE virtual machine, which has all the necessary tools already installed. I copied my qcow2 to the VM and created my packages descriptor file, **package.yaml**
 
-```
+```bash
 ioxsde@ioxsde:~$ cat package.yaml
 descriptor-schema-version: "2.4"
 
@@ -66,7 +68,7 @@ Once you have this to your liking, you can create the package file with: `ioxcli
 
 First, you need to configure your internal networking if you haven’t yet. The IOx apps use VirtualPortGroup interfaces to connect to the IOS part of the router. My interface configuration looks like this:
 
-```
+```bash
 interface VirtualPortGroup0
 ip address 10.0.0.1 255.255.255.0
 ip nat inside
@@ -74,7 +76,7 @@ ip nat inside
 
 Now, we can configure the app-hosting configuration stanza. Note **guest-interface 0** maps to **eth0** on the guest. For my alpine VM, I have DHCP enabled, so I also needed a DHCP pool.
 
-```
+```bash
 app-hosting appid tailscale
  app-vnic gateway0 virtualportgroup 0 guest-interface 0
 ip dhcp pool app-hosting
@@ -85,16 +87,16 @@ ip dhcp pool app-hosting
 
 Now, we can install, activate, start, then connect to the new VM. Note: for the appid, you can only use A-Z, a-z, and \_. I had a dash in the name and spent way too much time troubleshooting.
 
-```
-isr4k#app-hosting install appid tailscale package bootflash:tailscale101.tar
-isr4k#app-hosting activate appid helloworld_app
-isr4k#app-hosting start appid helloworld_app
-isr4k#app-hosting connect appid helloworld_app console
+```bash
+isr4k# app-hosting install appid tailscale package bootflash:tailscale101.tar
+isr4k# app-hosting activate appid helloworld_app
+isr4k# app-hosting start appid helloworld_app
+isr4k# app-hosting connect appid helloworld_app console
 ```
 
 At this point, you should be in the shell of your virtual machine.
 
-```
+```bash
 localhost:~# ip addr
 link/ether 52:54:dd:47:76:e8 brd ff:ff:ff:ff:ff:ff
 inet 10.0.0.3/24 scope global eth0

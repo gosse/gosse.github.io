@@ -12,6 +12,25 @@ footnoteReturnLinkContents = "^"
 [outputs]
   section = ["JSON", "HTML"]
 
+
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = false
+    noHl = false
+    style = 'monokai'
+    tabWidth = 2
+
+
 [[params.nav]]
   identifier = "about"
   name = "About"
@@ -55,3 +74,7 @@ footnoteReturnLinkContents = "^"
   width = 50
   height = 50
   alt = "Logo"
+
+[params]
+  customCSS = ["/css/custom.css", "/css/syntax.css"] # in case you use `/static/css/custom.css`
+
