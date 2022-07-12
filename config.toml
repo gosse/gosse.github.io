@@ -70,7 +70,7 @@ footnoteReturnLinkContents = "^"
   icon="fab fa-twitter"
 
 [params.logo]
-  url = "logo.png" # static/images/icon.png
+#  url = "logo.png" # static/images/icon.png
   width = 50
   height = 50
   alt = "Logo"
