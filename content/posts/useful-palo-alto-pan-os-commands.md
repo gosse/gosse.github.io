@@ -3,7 +3,7 @@ author: Gary Ossewaarde
 title: Useful Palo Alto PAN-OS Commands
 categories: ['networking']
 tags: ['networking', 'palo alto', 'panos', 'security', 'strata']
-date: 2021-07-21T21:45:28-04:00
+date: 2022-07-13T21:45:28-04:00
 ---
 
 Here are some commands I continually find myself searcing for, all in one place. 
@@ -18,6 +18,7 @@ set cli terminal width 500
 ```
 
 Update Content/Threats from CLI (update license first)
+
 
 ```
 request license fetch 
@@ -59,7 +60,9 @@ Newer models – disable ZTP
 request disable-ztp
 ```
 
-Configure Panorama server and delete default config ```
+Configure Panorama server and delete default config 
+
+```
 set deviceconfig system panorama-server `IP/Hostname`
 
 delete network virtual-wire default-vwire
