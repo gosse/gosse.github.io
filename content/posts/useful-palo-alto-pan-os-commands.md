@@ -38,9 +38,11 @@ request anti-virus upgrade install version latest
 Update PAN-OS Version from CLI
 
 ```
+request system software check 
 request system software info
-request system software download version 9.0.3-h3
-request system software install version 9.0.3-h3
+request system software download version 10.0.0
+request system software download version 10.0.10-h1
+request system software install version 10.0.10-h1
 request restart system
 ```
 
