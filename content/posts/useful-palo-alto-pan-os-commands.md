@@ -3,7 +3,7 @@ author: Gary Ossewaarde
 title: Useful Palo Alto PAN-OS Commands
 categories: ['networking']
 tags: ['networking', 'palo alto', 'panos', 'security', 'strata']
-date: 2022-07-13T21:45:28-04:00
+date: 2022-07-12T21:45:28-04:00
 ---
 
 Here are some commands I continually find myself searcing for, all in one place. 
