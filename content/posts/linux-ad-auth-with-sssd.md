@@ -3,7 +3,7 @@ author: Gary Ossewaarde
 title: Linux - AD Auth with SSSD
 categories: ['linux']
 tags: ['linux', 'active directory']
-date: 2022-30-12T21:45:28-04:00
+date: 2022-12-30T21:45:28-04:00
 ---
 
 1. Install necessary packages: `sudo apt install sssd-ad sssd-tools realmd adcli`
