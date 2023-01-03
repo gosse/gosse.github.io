@@ -6,6 +6,10 @@ tags: ['linux', 'active directory']
 date: 2022-12-30T21:45:28-04:00
 ---
 
+Here are some brief notes on authenticating Linux users with AD - including using SSH keys. All of this was done on Ubuntu 22.04. 
+
+<!--more-->
+
 1. Install necessary packages: `sudo apt install sssd-ad sssd-tools realmd adcli`
 
 2. Join the domain: `sudo realm join <domain name>`
