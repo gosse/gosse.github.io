@@ -3,7 +3,7 @@ author: Gary Ossewaarde
 title: Linux - AD Auth with SSSD
 categories: ['linux']
 tags: ['linux', 'active directory']
-date: 2021-30-12T21:45:28-04:00
+date: 2022-30-12T21:45:28-04:00
 ---
 
 1. Install necessary packages: `sudo apt install sssd-ad sssd-tools realmd adcli`
@@ -12,8 +12,7 @@ date: 2021-30-12T21:45:28-04:00
 
 3. Enable home directories with pam: `sudo pam-auth-update --enable mkhomedir`
 
-4. Configure SSSD 
-    - Note in here  "ldap_user_ssh_public_key = sshPublicKey" - this becomes important in a later step, but included for completeness of sssd.conf
+4. Configure SSSD. Note: the line "ldap_user_ssh_public_key = sshPublicKey" becomes important in a later step, but included for completeness of sssd.conf
 
     ```
     # /etc/sssd/sssd.conf
@@ -62,6 +61,6 @@ date: 2021-30-12T21:45:28-04:00
     sudo /usr/bin/sss_ssh_authorizedkeys <username>
     ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDex2RUYI75nlIPRyx1CPUVJrNE58qRVGJoUf+/Oq2xWBxAKjoksXYdyvCvNBijr56SBj7Zhze+LWUynlBD+Lp1afPtKft0qeltm7N7E9PKaIKUClxuSMnNJ/+Hr28k8+vFQfY/sKHzUstbykBh575IVQGwvXsEIsD70zKjkyHEGkytsZqDk+N35gSC68mya86+CaXvWCMn3njNmdeiYoUfQbOjdVCtfd7oB7mCZOfO9MIPFIEqiyHkXVePuBd0uOO9DjIO+WhPNeMHK9B7loOgA5foeGMeFS/7Hrp+FsX7zOeJcOqzBgogRhvEx63aEFziH+/dEfJlvI/OBVdEyDdOyIl7vAsi3rrB8uHN40vrFcfcOgeKHys3LwMu+rib75unvq6l0dGQlytz5ZITOKsmprXvc= 
     ```
-    You may need to clear the SSSD cache during the initial setup, `sudo sss_cache -E`
+    You may also need to clear the SSSD cache during the initial setup, `sudo sss_cache -E`
 
 
