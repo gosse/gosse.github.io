@@ -24,6 +24,10 @@ This is part of a series of building data center fabrics with different network 
 
 ![Layer 2 Spine Leaf](/images/L2-Spine-Leaf.drawio.png)
 
+- Using MC-LAG for port-channels down to leafs
+- All spine<>leaf connections are 802.1Q trunks
+- Three links between spines, one port-channel for the peer-link, one link for the keepalive
+
 ### Configuration 
 
 #### Disable ZTP
