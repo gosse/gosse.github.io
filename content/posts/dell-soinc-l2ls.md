@@ -7,6 +7,8 @@ date: 2024-03-26T10:45:28-04:00
 draft: false
 ---
 
+<!--more-->
+
 ### Introduction 
 
 "Layer 2 Spine-Leaf" is a great architecture for most small data centers. If the data center only has a few racks of equipment, it's often unnecessary to build a more complex design. In its most basic deployment, all gateways are SVIs (VLAN interfaces) on the spines. Multi-tenancy can be achieved by using VRF-lite and putting a firewall in to stitch the VRFs together. 
